@@ -1,0 +1,59 @@
+.goals-list {
+  padding: 16px;
+}
+
+.goals-list h2 {
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.goals-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.goal-item {
+  padding: 12px;
+  background-color: white;
+  border-radius: 4px;
+  border-left: 4px solid;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.goal-item:hover {
+  transform: translateX(4px);
+}
+
+.goal-item.selected {
+  background-color: #f0f7ff;
+}
+
+.goal-title {
+  font-weight: bold;
+  color: #333;
+}
+
+.tasks-list {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.task-item {
+  padding: 8px;
+  border-radius: 4px;
+  color: white;
+  cursor: grab;
+  transition: transform 0.2s;
+}
+
+.task-item:hover {
+  transform: translateX(4px);
+}
+
+.task-item:active {
+  cursor: grabbing;
+} 

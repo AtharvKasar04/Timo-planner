@@ -1,0 +1,33 @@
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+}
+
+.date-range {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.navigation-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.navigation-buttons button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4a90e2;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.navigation-buttons button:hover {
+  background-color: #357abd;
+} 

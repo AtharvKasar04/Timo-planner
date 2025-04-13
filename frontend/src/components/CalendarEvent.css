@@ -1,0 +1,53 @@
+.calendar-event {
+  position: absolute;
+  padding: 6px 8px;
+  border-radius: 4px;
+  color: white;
+  font-size: 12px;
+  cursor: grab;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  z-index: 1;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  user-select: none;
+  margin: 0;
+}
+
+.calendar-event:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.calendar-event.dragging {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.event-title {
+  font-weight: 600;
+  margin-bottom: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.event-time {
+  font-size: 10px;
+  opacity: 0.9;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  line-height: 1.2;
+} 

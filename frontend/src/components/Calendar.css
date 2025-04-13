@@ -1,0 +1,127 @@
+.calendar {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  height: 100%;
+}
+
+.calendar-grid {
+  display: flex;
+  flex: 1;
+  overflow: auto;
+}
+
+.time-column {
+  width: 60px;
+  border-right: 1px solid #e0e0e0;
+  flex-shrink: 0;
+  margin-top: 60px; /* Match the day header height */
+}
+
+.time-header {
+  height: 60px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.time-column .time-slot {
+  padding: 8px;
+  font-size: 12px;
+  color: #666;
+  border-bottom: 1px solid #f0f0f0;
+  box-sizing: border-box;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.days-container {
+  display: flex;
+  flex: 1;
+  overflow-x: auto;
+}
+
+.calendar-day {
+  min-width: 200px;
+  border-right: 1px solid #e0e0e0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.day-header {
+  padding: 8px;
+  height: 60px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.date {
+  font-weight: bold;
+}
+
+.time-slots {
+  flex: 1;
+  position: relative;
+}
+
+.time-slots .time-slot {
+  height: 60px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.events-container {
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.calendar-event {
+  pointer-events: all;
+  margin: 0 4px;
+  padding: 4px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: white;
+  overflow: hidden;
+  z-index: 1;
+  position: absolute;
+}
+
+.calendar-event:hover {
+  z-index: 2;
+}
+
+/* Remove duplicate scrollbars */
+.time-slots::-webkit-scrollbar {
+  display: none;
+}
+
+.calendar-grid::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.calendar-grid::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.calendar-grid::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.calendar-grid::-webkit-scrollbar-thumb:hover {
+  background: #555;
+} 
