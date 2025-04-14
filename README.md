@@ -19,7 +19,7 @@ A Google Calendar-like application built with React, TypeScript, Node.js, and Mo
   - TypeScript
   - Vite
   - Redux Toolkit
-  - React Beautiful DnD
+  - React DnD
   - date-fns
   - Axios
 
